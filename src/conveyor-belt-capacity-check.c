@@ -1,4 +1,4 @@
-    #include <stdio.h>
+#include <stdio.h>
 
 int MOTOR_CAPACITY = 12;
 
@@ -8,7 +8,7 @@ int main() {
     /// YOUR CODE HERE
     scanf("%d", &motorCount);
 scanf("%d", &totalPackageWeight);
-        if (totalPackageWeight < motorCount) {
+        if (totalPackageWeight/motorCount<12) {
         printf("Yes! The conveyor belt can carry the packages.\n");
     } else {
         printf("No. The conveyor belt cannot carry the packages.\n");
